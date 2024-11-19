@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path com Bordas Arredondadas</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: #000000;
+            border-radius: 20px; /* Define o arredondamento das bordas */
+            overflow: hidden; /* Oculta o conteúdo fora das bordas arredondadas */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(25.02% 25%, 84.25% 25%, 75% 32.15%, 75% 39.29%, 69.54% 52.5%, 41.5% 52.5%, 36.59% 39.29%, 36.59% 32.15%);
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="inner"></div>
+</div>
+
+</body>
+</html>
